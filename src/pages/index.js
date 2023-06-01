@@ -24,7 +24,7 @@ export default function Home({importantNews,lastPublishedNews}) {
   const router = useRouter()
   return (
     <AppLayout>
-      <ImportantArticlesSlider articles={importantNews} />
+      <ImportantArticlesSlider articles={importantNews} lastPublished={lastPublishedNews} />
       <LastPublishedNews articles={lastPublishedNews}  />
       APP {router.locale}
     </AppLayout>
